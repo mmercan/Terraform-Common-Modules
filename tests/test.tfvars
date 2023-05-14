@@ -1,0 +1,6 @@
+location                            = "Australia Southeast"
+environment                         = "dev"
+resource_group_name                 = "lighthouse-api-dev"
+tag_application                     = "lighthouse"
+tag_environment                     = "dev"
+tag_tech_contact                    = "matt.mercan"
