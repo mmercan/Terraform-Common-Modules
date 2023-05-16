@@ -1,7 +1,8 @@
-resource "github_actions_environment_secret" "example_secret" {
-  environment       = "example_environment"
-  secret_name       = "example_secret_name"
-  plaintext_value   = var.some_secret_string
+resource "github_actions_environment_secret" "actions_environment_secret" {
+  repository        = var.repository
+  environment       = var.environment
+  secret_name       = var.secret_name
+  plaintext_value   = var.plaintext_value
 }
 
 

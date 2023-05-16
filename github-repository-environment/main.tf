@@ -1,7 +1,7 @@
 
 resource "github_repository_environment" "example" {
-  environment  = "example"
-  repository   = github_repository.example.name
+  environment  = var.environment
+  repository   = var.repository
   reviewers {
     users = [data.github_user.current.id]
   }
